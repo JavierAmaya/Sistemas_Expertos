@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+
+    <h1>Hello Wolrd NodeJs</h1><br><br>
+
+    <input id= 'usuario' type="text" placeholder="Usuario" value="Javier">
+    <input id= 'password' type="password" placeholder="Password">
+    <input id= 'correo' type="correo" placeholder="correo" onkeyup="validarCorreo(this)">
+    <button onclick="guardar()">Guardar</button>
+    <br><br>
+    <hr>
+
+    <div>
+        <p id="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nesciunt ducimus doloremque culpa temporibus maxime optio, eligendi rem modi, sequi porro adipisci tenetur fugiat perferendis aliquam architecto ab, dolore incidunt!</p>
+        <button onclick="cambiarEstilos()">cambiar estilos</button>
+    </div>
+    <script>
+       /// console.log('sumar',sumar(5,7));
+
+        document.write("HelloWorldss");
+        console.log("awevos");
+       // alert("HelloMundo");
+
+        let persona = {
+            nombre : 'Juan',
+            apellido: 'Perez',
+            fechaNacimiento : {
+                dia : '15',
+                mes : '12',
+                anio : '1998'
+            }
+        };
+        // Imprime todo el objeto como una cadena
+        document.write(JSON.stringify(persona)); 
+
+        console.log(persona);
+
+        console.log(persona.fechaNacimiento.anio);
+
+        /// agregar un nuevo atributo al JSon ya creado
+
+        persona.genero = 'Machomenos';
+
+        console.log ('esto viene en persona despues de agregarle genero');
+
+        console.log(persona);
+
+        //otra forma de agregar atributos al arreglo
+
+        persona['pais'] = 'Honduras';
+    </script>
+
+    <script src="js/funciones.js"></script>
+
+</body>
+</html>
